@@ -21,7 +21,7 @@ Imagine having a team of AI experts at your disposal, each specialized in differ
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/CerebroMCP.git
+git clone https://github.com/ps2program/CerebroMCP.git
 cd CerebroMCP
 
 # Set up your environment
