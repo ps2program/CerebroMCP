@@ -21,7 +21,7 @@ Imagine having a team of AI experts at your disposal, each specialized in differ
 
 ```bash
 # Clone the repository
-git clone https://github.com/ps2program/CerebroMCP.git
+git clone https://github.com/yourusername/CerebroMCP.git
 cd CerebroMCP
 
 # Set up your environment
@@ -30,9 +30,46 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Run the application
-python project.py
+## 🏃‍♂️ Running the Application
+
+### Method 1: Using VS Code (Recommended)
+
+1. Open the project in VS Code
+2. Go to the Run and Debug view (Ctrl+Shift+D or Cmd+Shift+D)
+3. Select "Run Full Application" from the dropdown
+4. Click the play button or press F5
+
+This will start both the persistent server and main application in debug mode.
+
+### Method 2: Manual Terminal
+
+1. Start the persistent server in one terminal:
+```bash
+# Activate virtual environment if not already activated
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Start the persistent server
+python app/servers/persistent_server.py
+```
+
+2. In another terminal, start the main application:
+```bash
+# Activate virtual environment if not already activated
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Start the main application
+python app/main.py
+```
+
+### Method 3: Using Scripts
+
+You can also use the provided scripts to start the application:
+
+```bash
+# Start both server and main application
+./scripts/start.sh  # On Windows: scripts\start.bat
 ```
 
 ## 🎯 How It Works
